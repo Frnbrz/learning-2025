@@ -63,7 +63,46 @@ p {
   
 ### Navegadores
 
+#### Navegadores en CSS
 
+Los navegadores web son programas que interpretan y renderizan el código HTML y CSS para mostrar páginas web. Sin embargo, no todos los navegadores funcionan de la misma manera, lo que puede generar inconsistencias en la visualización de un sitio web. A continuación, se detallan los aspectos clave relacionados con los navegadores en el desarrollo con CSS.
+
+---
+
+##### 1. Motores de renderizado
+
+Cada navegador utiliza un motor de renderizado para interpretar y mostrar el contenido web. Los motores más comunes son:
+
+- **Blink**: Utilizado por Google Chrome, Microsoft Edge (versiones recientes) y otros navegadores basados en Chromium.
+- **Gecko**: Utilizado por Mozilla Firefox.
+- **WebKit**: Utilizado por Safari y algunos navegadores en dispositivos Apple.
+- **Trident**: Utilizado por versiones antiguas de Internet Explorer.
+- **EdgeHTML**: Utilizado por versiones anteriores de Microsoft Edge (antes de la transición a Chromium).
+
+---
+
+##### 2. Compatibilidad entre navegadores
+
+No todos los navegadores soportan las mismas características de CSS al mismo tiempo. Algunas propiedades o funciones pueden estar disponibles en un navegador pero no en otro, o pueden comportarse de manera diferente.
+
+- **Herramientas de compatibilidad**: Usa [Can I use](https://caniuse.com/) para verificar si una propiedad o función de CSS es compatible con los navegadores que deseas soportar.
+- **Polyfills**: En algunos casos, es necesario utilizar polyfills (códigos adicionales) para emular funcionalidades no soportadas en navegadores antiguos.
+
+---
+
+##### 3. Prefijos de proveedor
+
+Algunas propiedades de CSS requieren prefijos específicos del navegador para funcionar correctamente. Aunque muchos prefijos ya no son necesarios en navegadores modernos, es importante conocerlos si trabajas con versiones antiguas.
+
+Ejemplo de prefijos:
+
+```css
+.element {
+    -webkit-border-radius: 10px; /* Para navegadores basados en WebKit (Safari, Chrome antiguo) */
+    -moz-border-radius: 10px;    /* Para Firefox */
+    border-radius: 10px;         /* Estándar */****
+}
+```
 
 ### Compatabilidad
 
